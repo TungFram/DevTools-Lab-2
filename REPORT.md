@@ -63,3 +63,7 @@
   ![task1.png](docs/task5.2.png)
 + git bisect reset
 
+## Task 6
+
++ git filter-branch --force --prune-empty --index-filter "git rm -rf --cached --ignore-unmatch .env" --tag-name-filter cat -- --all
++ echo '.env' >> .gitignore
