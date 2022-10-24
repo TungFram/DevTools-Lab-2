@@ -40,3 +40,8 @@
   ![task1.png](docs/task3.2.png)
 + git switch -c old-master
   ![task1.png](docs/task3.3.png)
+
+## Task 4
+
++ git blame -L 32,+1 prisma/seed.ts
+  ![task1.png](docs/task4.png)
