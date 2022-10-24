@@ -17,31 +17,49 @@
 
 ## Task 2
 
-![task1.png](docs/task2.1.png)
+![task2.1.png](docs/task2.1.png)
 + git checkout ci
 + git rebase -i HEAD~2
-  ![task1.png](docs/task2.2.png)
-  ![task1.png](docs/task2.3.png)
-  ![task1.png](docs/task2.4.png)
-  ![task1.png](docs/task2.5.png)
+  ![task2.2.png](docs/task2.2.png)
+  ![task2.3.png](docs/task2.3.png)
+  ![task2.4.png](docs/task2.4.png)
+  ![task2.5.png](docs/task2.5.png)
 + git rebase master
-  ![task1.png](docs/task2.6.png)
+  ![task2.6.png](docs/task2.6.png)
 + git checkout master
 + git merge ci
-  ![task1.png](docs/task2.7.png)
+  ![task2.7.png](docs/task2.7.png)
 + git branch -D ci
-  ![task1.png](docs/task2.8.png)
+  ![task2.8.png](docs/task2.8.png)
 
 ## Task 3
 
 + git log --graph --oneline --reflog
-  ![task1.png](docs/task3.1.png)
+  ![task3.1.png](docs/task3.1.png)
 + git checkout aae7df3ec8096a0815f04212b809db7a0dbddd27
-  ![task1.png](docs/task3.2.png)
+  ![task3.2.png](docs/task3.2.png)
 + git switch -c old-master
-  ![task1.png](docs/task3.3.png)
+  ![task3.3.png](docs/task3.3.png)
 
 ## Task 4
 
 + git blame -L 32,+1 prisma/seed.ts
-  ![task1.png](docs/task4.png)
+  ![task4.png](docs/task4.png)
+
+## Task 5
+
++ git bisect start
++ git bisect bad 12c17ba458a0d83b4eb5218aceff147b92a2aa2b
++ git bisect good 8673a61216986f4401c85c1b8448488911c2c678
++ npm run test
++ git bisect bad
++ npm run test 
++ git bisect good
++ npm run test 
++ git bisect bad 
++ npm run test
++ git bisect bad
+  ![task1.png](docs/task5.1.png)
+  ![task1.png](docs/task5.2.png)
++ git bisect reset
+
