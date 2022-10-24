@@ -68,13 +68,13 @@
 + git filter-branch --force --prune-empty --index-filter "git rm -rf --cached --ignore-unmatch .env" --tag-name-filter cat -- --all
 + echo '.env' >> .gitignore
 
-Task 7
+## Task 7
 
   ![task7.1.png](docs/task7.1.png)
 + git filter-branch -f --env-filter "GIT_AUTHOR_NAME='Sidortsov Vladimir Sergeevich'; GIT_AUTHOR_EMAIL='TungFram@yandex.ru'; GIT_COMMITTER_NAME='Sidortsov Vladimir Sergeevich'; GIT_COMMITTER_EMAIL='TungFram@yandex.ru';" HEAD~3..HEAD
   ![task7.2.png](docs/task7.2.png)
 
-Task 8
+## Task 8
 
 + git config rerere.enabled true
 + git merge feature
@@ -85,4 +85,10 @@ Task 8
 + git add .
 + git commit
   ![task8.png](docs/task8.png)
+
+## Task 9
+
++ git fsck
+  ![task9.png](docs/task9.png)
+
 
