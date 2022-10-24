@@ -59,11 +59,19 @@
 + git bisect bad 
 + npm run test
 + git bisect bad
-  ![task1.png](docs/task5.1.png)
-  ![task1.png](docs/task5.2.png)
+  ![task5.1.png](docs/task5.1.png)
+  ![task5.2.png](docs/task5.2.png)
 + git bisect reset
 
 ## Task 6
 
 + git filter-branch --force --prune-empty --index-filter "git rm -rf --cached --ignore-unmatch .env" --tag-name-filter cat -- --all
 + echo '.env' >> .gitignore
+
+Task 7
+
+  ![task7.1.png](docs/task7.1.png)
++ git filter-branch -f --env-filter "GIT_AUTHOR_NAME='Sidortsov Vladimir Sergeevich'; GIT_AUTHOR_EMAIL='TungFram@yandex.ru'; GIT_COMMITTER_NAME='Sidortsov Vladimir Sergeevich'; GIT_COMMITTER_EMAIL='TungFram@yandex.ru';" HEAD~3..HEAD
+  ![task7.2.png](docs/task7.2.png)
+
+
