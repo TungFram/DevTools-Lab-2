@@ -32,3 +32,11 @@
 + git branch -D ci
   ![task1.png](docs/task2.8.png)
 
+## Task 3
+
++ git log --graph --oneline --reflog
+  ![task1.png](docs/task3.1.png)
++ git checkout aae7df3ec8096a0815f04212b809db7a0dbddd27
+  ![task1.png](docs/task3.2.png)
++ git switch -c old-master
+  ![task1.png](docs/task3.3.png)
