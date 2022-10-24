@@ -103,4 +103,10 @@
 **Итоговая версия репозитория:**
 ![task10-final-version.png](docs/task10-final-version.png)
 
+## Task 11
 
+  ![task11.1.png](docs/task11.1.png)
++ git add docs/task(1-10).*
++ git add REPORT.md
++ git commit -a -m "feat: task(1-10) at REPORT.md"
+  ![task11.2.png](docs/task11.2.png)
