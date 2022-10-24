@@ -74,4 +74,15 @@ Task 7
 + git filter-branch -f --env-filter "GIT_AUTHOR_NAME='Sidortsov Vladimir Sergeevich'; GIT_AUTHOR_EMAIL='TungFram@yandex.ru'; GIT_COMMITTER_NAME='Sidortsov Vladimir Sergeevich'; GIT_COMMITTER_EMAIL='TungFram@yandex.ru';" HEAD~3..HEAD
   ![task7.2.png](docs/task7.2.png)
 
+Task 8
+
++ git config rerere.enabled true
++ git merge feature
++ git add .
++ git commit
++ git reset
++ git merge feature
++ git add .
++ git commit
+  ![task8.png](docs/task8.png)
 
