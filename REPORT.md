@@ -91,4 +91,16 @@
 + git fsck
   ![task9.png](docs/task9.png)
 
+## Task 10
+
++ git fsck
++ git count-objects -vH
++ git gc --prune=now --aggressive
++ git count-objects -vH
++ git fsck
+  ![task10.png](docs/task10.png)
+
+**Итоговая версия репозитория:**
+![task10-final-version.png](docs/task10-final-version.png)
+
 
